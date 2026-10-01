@@ -1,0 +1,16 @@
+h1{
+    color: blue;
+}
+
+.circle-border
+{
+    width:10em;
+    border: 3px solid purple;
+    border-radius:50%
+}
+img
+{
+    width:10em;
+    border: 3px solid purple;
+    border-radius:50%
+}

@@ -14,3 +14,11 @@ img
     border: 3px solid purple;
     border-radius:50%
 }
+body
+{
+    background-image: url("images/background.avif");
+}
+background-images
+{
+    background-image: linear-gradient();
+}

@@ -1,6 +1,21 @@
 h1{
     color: blue;
+    
 }
+html
+{
+margin:0;
+padding:0;
+scrollbar-width: none ;
+
+}
+body
+{
+margin:0;
+padding:0;
+height:300vh;  
+}
+
 
 .circle-border
 {
@@ -22,3 +37,4 @@ background-images
 {
     background-image: linear-gradient();
 }
+

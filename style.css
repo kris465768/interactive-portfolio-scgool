@@ -1,6 +1,6 @@
 h1{
     color: blue;
-     
+           
 }
 html
 {
@@ -23,6 +23,15 @@ height:300vh;
     border: 3px solid purple;
     border-radius:50%
 }
+
+#avatar
+{
+    bottom: 2em;
+    left: 2em;
+    position: fixed;
+}
+
+
 img
 {
     width:10em;

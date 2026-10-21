@@ -1,19 +1,24 @@
 document.addEventListener("scroll",(event)=>
 {
-    var positionYs = window.scrollY;
-    console.log(positionY);
+   const avatar = document.getElementById("avatar");
+   var positionY = window.scrollY;
+   var max = document.body.scrollHeight;
+   var progress = positionY / max;
+   avatar.style.left = positionY +"em";
+   console.log(avatar);
+   console.log(positionY + "/" + max + "=" + progress);
+    
 });
-documents.addEventListener("keypress",(event)=>
+
+document.addEventListener("keydown",(event)=>
 {
 if((event.key=="ArrowLeft") || (event.key == "ArrowUp"))
 {
-    console.log("Left arrow");
+    console.log("Go l eft");
 }
 if(event.key=="ArrowRight") || (event.key == "ArrowDown"))
 {
-    console.log("Right arrow");
-}
-{
-    console.log("Do roght");
+    console.log("Arrow Right");
 }
 });
+        

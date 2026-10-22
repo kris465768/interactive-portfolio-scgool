@@ -1,15 +1,19 @@
+  const avatar = document.getElementById("avatar");
+
 document.addEventListener("scroll",(event)=>
+
 {
-   const avatar = document.getElementById("avatar");
-   var positionY = window.scrollY;
-   var max = document.body.scrollHeight;
+    
+   let positionY = window.scrollY;
+   var maxHeight = document.body.scrollHeight;
+   var maxWight = 
    var progress = positionY / max;
    avatar.style.left = positionY +"em";
    console.log(avatar);
    console.log(positionY + "/" + max + "=" + progress);
     
 });
-
+ 
 document.addEventListener("keydown",(event)=>
 {
 if((event.key=="ArrowLeft") || (event.key == "ArrowUp"))

@@ -29,8 +29,15 @@ height:300vh;
     bottom: 2em;
     left: 2em;
     position: fixed;
+
+    animation : bobbing 1s  ease-in-out infinite alternatex ;
 }
 
+@keyframes bobbing
+{
+    from { transform: translateY(0); }
+    to { trasform: translateY(-10px); }
+}
 
 img
 {

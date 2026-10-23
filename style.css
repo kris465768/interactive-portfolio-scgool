@@ -1,56 +1,46 @@
-h1{
-    color: blue;
-           
+h1
+{
+    color: red;
 }
+
 html
 {
-margin:0;
-padding:0;
-scrollbar-width: none ;
-
+    margin:  0;
+    padding: 0;
+    scrollbar-width: none;
 }
+
 body
 {
-margin:0;
-padding:0;
-height:300vh;  
+    margin:  0;
+    padding: 0;
+    height: 300vh;
 }
 
+
+.face-right
+{
+    scale: -1 1;
+}
 
 .circle-border
 {
-    width:10em;
-    border: 3px solid purple;
-    border-radius:50%
+    width: 10em;
+    border: 1px solid red;
+    border-radius: 50%;
 }
 
 #avatar
 {
-    bottom: 2em;
-    left: 2em;
+    bottom:   2em;
+    left:     2em;
     position: fixed;
 
-    animation : bobbing 1s  ease-in-out infinite alternatex ;
+    animation: bobbing 1s ease-in-out infinite alternate;
 }
 
 @keyframes bobbing
 {
     from { transform: translateY(0); }
-    to { trasform: translateY(-10px); }
+    to   { transform: translateY(-10px); }
 }
-
-img
-{
-    width:10em;
-    border: 3px solid purple;
-    border-radius:50%
-}
-body
-{
-    background-image: url("images/background.avif");
-}
-background-images
-{
-    background-image: linear-gradient();
-}
-

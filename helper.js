@@ -1,28 +1,32 @@
-  const avatar = document.getElementById("avatar");
+const avatar = document.getElementById("avatar");
+const root = document.documentElement;
+var pastProgress=0; 
 
-document.addEventListener("scroll",(event)=>
+document.addEventListener("scroll", (event) =>
+{
+    var positionY = window.scrollY;
+    var maxHeight = root.scrollHeight - window.innerHeight;
+    var maxWidth  = window.innerWidth - avatar.offsetWidth;
+    var progress  = (positionY / maxHeight) * maxWidth;
 
-{
-    
-   let positionY = window.scrollY;
-   var maxHeight = document.body.scrollHeight;
-   var maxWight = 
-   var progress = positionY / max;
-   avatar.style.left = positionY +"em";
-   console.log(avatar);
-   console.log(positionY + "/" + max + "=" + progress);
-    
+if (progress < pastProgress)
+    avatar.classList.add("face-right");
+else if (progress > pastProgress)
+    avatar.classList.remove("face-right");
+
+    avatar.style.left = progress + "px";
+
+    pastProgress = progress;
 });
- 
-document.addEventListener("keydown",(event)=>
+
+document.addEventListener("keydown", (event) =>
 {
-if((event.key=="ArrowLeft") || (event.key == "ArrowUp"))
-{
-    console.log("Go l eft");
-}
-if(event.key=="ArrowRight") || (event.key == "ArrowDown"))
-{
-    console.log("Arrow Right");
-}
+    if ((event.key === "ArrowLeft") || (event.key === "ArrowUp"))
+    {
+        console.log("Go left");
+    }
+    if ((event.key === "ArrowRight") || (event.key === "ArrowDown"))
+    {
+        console.log("Go right");
+    }
 });
-        

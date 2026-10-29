@@ -14,7 +14,7 @@ body
 {
     margin:  0;
     padding: 0;
-    height: 300vh;
+   
 }
 
 
@@ -39,8 +39,23 @@ body
     animation: bobbing 1s ease-in-out infinite alternate;
 }
 
+
+main
+{
+    display:flex;
+}
+
 @keyframes bobbing
 {
     from { transform: translateY(0); }
-    to   { transform: translateY(-10px); }
+    to   { transform: translateY(-25px); }
 }
+
+#about-me h2,h3{
+    padding-left:3em;
+}
+section
+{
+ width:100vw; 
+ flex-shrink:0;  
+}    

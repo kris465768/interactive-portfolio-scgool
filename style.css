@@ -51,11 +51,53 @@ main
     to   { transform: translateY(-25px); }
 }
 
-#about-me h2,h3{
+#about-me h2,h3
+{
     padding-left:3em;
 }
+#Projects h2
+{
+    padding-left:3em;
+}
+#skills h2,h4
+{
+    padding-left:3em;
+}
+#Contacts h2
+{
+    padding-left:3em;
+}
+
 section
 {
  width:100vw; 
  flex-shrink:0;  
 }    
+
+#about-me
+{
+    background-size: cover;
+    background-image: url("https://www.travelandleisure.com/thmb/4cyCfg1QFsY6Ax89qPCE6HjUPF0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-mt-fuji-japan-PICTUREMTNS0324-0a4af8095f534b9f8b7447840bd96950.jpg");
+     min-height: 100vh;
+}
+
+#Projects
+{
+    background-size: cover;
+    background-image: url("https://www.travelandleisure.com/thmb/4cyCfg1QFsY6Ax89qPCE6HjUPF0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-mt-fuji-japan-PICTUREMTNS0324-0a4af8095f534b9f8b7447840bd96950.jpg");
+     min-height: 100vh;
+}
+
+#skills
+{
+    background-size: cover;
+    background-image: url("https://www.travelandleisure.com/thmb/4cyCfg1QFsY6Ax89qPCE6HjUPF0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-mt-fuji-japan-PICTUREMTNS0324-0a4af8095f534b9f8b7447840bd96950.jpg");
+     min-height: 100vh;
+}
+
+#Contacts
+{
+    background-size: cover;
+    background-image: url("https://www.travelandleisure.com/thmb/4cyCfg1QFsY6Ax89qPCE6HjUPF0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-mt-fuji-japan-PICTUREMTNS0324-0a4af8095f534b9f8b7447840bd96950.jpg");
+     min-height: 100vh;
+}
